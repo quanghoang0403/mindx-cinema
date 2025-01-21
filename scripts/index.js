@@ -6,7 +6,7 @@ const HomeAPIRoutes = {
   "Upcoming Movies": { url: "/movie/upcoming" },
 };
 
-async function fetchMovies() {
+async function fetchData() {
   const moviesContainer = document.getElementById("movies-container");
 
   // Fetch all movie sections concurrently
@@ -62,4 +62,4 @@ async function fetchMovies() {
 }
 
 // Fetch and display movies on page load
-fetchMovies();
+fetchData();

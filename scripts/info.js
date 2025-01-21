@@ -5,7 +5,7 @@ if (!movieId) location.href = "./index.html";
 
 const labels = ["data", "casts", "similar"];
 
-(async () => {
+async function fetchData() {
   const result = (
     await Promise.all([
       (
@@ -95,4 +95,6 @@ const labels = ["data", "casts", "similar"];
       )
       .join("");
   }
-})();
+}
+
+fetchData();

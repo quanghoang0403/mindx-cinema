@@ -3,7 +3,7 @@ const movieId = searchQuery.get("id");
 
 if (!movieId) location.href = "./index.html";
 
-(async () => {
+async function fetchData() {
   const result = (
     await Promise.all([
       fetch(
@@ -55,4 +55,6 @@ if (!movieId) location.href = "./index.html";
           .join("")}
       </div>
     `;
-})();
+};
+
+fetchData();
